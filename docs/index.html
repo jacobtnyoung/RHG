@@ -13,7 +13,7 @@
 
 <title>RAC Hoop Glossary</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -178,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -286,9 +279,9 @@ link</a></strong></p>
 <hr />
 <div id="termsphrases-pertaining-to-winsloses" class="section level5">
 <h5><ins> Terms/Phrases Pertaining to Wins/Loses <ins></h5>
-<p><em>Championship</em>-A game played to 31 to decide which of the
-opposing teams will have the winning record for the day. A game to 31 is
-worth 1.5 games.</p>
+<p><em>Championship</em>-A game played to no less than 25 to decide
+which of the opposing teams will have the winning record for the day. A
+game to 25 or more is worth 1.5 games.</p>
 <p><em>Defeated</em>-When a player or players loses every game they play
 on a specific day of hoop.</p>
 <p><em>Fellowship</em> (other usage is the term <em>Sweep</em>)-When a
@@ -435,7 +428,8 @@ incapable of being documented that depends entirely on the vigor of the
 advocate and his need for a roster upgrade.</p>
 <p><em>Rick</em>-When a player attempts a shot that hits the portion of
 the backboard that is vertical and perpendicular to the court.</p>
-<p>Samsonite-</p>
+<p><em>Samsonite</em>-When a player makes an egregious traveling
+violation.</p>
 <p><em>SHORT!</em>-A shot that only touches the tip of the rim.</p>
 <p><em>Sixty-nine</em>-Remarked when the score is 6-9, 16-9, 6-19, or
 16-19. Also, frequently mentioned subsequent to: Okay, it is 3-6, let’s
