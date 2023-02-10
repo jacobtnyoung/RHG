@@ -1,9 +1,9 @@
-name: "RAC Hoop Glossary"
+name: ""
 output_dir: "docs"
 navbar:
   title: ""
   left:
-    - text: "RAC Hoop Glossary"
+    - text: ""
       href: index.html
 output:
   html_document:
