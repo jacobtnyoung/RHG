@@ -8,7 +8,8 @@ title: "RAC Hoop Glossary"
 
 Terms are grouped by category and listed alphabetically in those categories. Terms in *italics* have been identified and defined. Terms that are not *italicized* are part of the lexicon, but require definitions. 
 
-To submit a term and definition or a definition for an existing term, use [this link](). 
+
+**To submit a term and definition or a definition for an existing term, use [this link](https://github.com/jacobtnyoung/RHG/issues)**
 
 
 <br>
@@ -33,7 +34,8 @@ True championship-
 
 *Undefeated*-When a player wins every game they play on a specific day of hoop. Note, a player can go "undefeated" and you earn "Fellowship" if they do not participate in the first game played on a given day.  
 
-To submit a term and definition or a definition for an existing term, use [this link](). 
+
+**To submit a term and definition or a definition for an existing term, use [this link](https://github.com/jacobtnyoung/RHG/issues)**
 
 <br>
 
@@ -49,7 +51,8 @@ Courtesy-
 
 Welfare-  
 
-To submit a term and definition or a definition for an existing term, use [this link](). 
+
+**To submit a term and definition or a definition for an existing term, use [this link](https://github.com/jacobtnyoung/RHG/issues)**
 
 <br>
 
@@ -164,5 +167,6 @@ Sticky D-
 *Turnover*-Legal fiction.
 
 *Who's got (insert players name)?*-Used to reference poor D on an opposing player who continues to score...over...and over...and over.
+
 
 To submit a term and definition or a definition for an existing term, use [this link](). 

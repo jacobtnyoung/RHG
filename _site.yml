@@ -1,7 +1,7 @@
 name: "RAC Hoop Glossary"
 output_dir: "docs"
 navbar:
-  title: "RAC Hoop Glossary"
+  title: ""
   left:
     - text: "RAC Hoop Glossary"
       href: index.html
