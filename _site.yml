@@ -1,8 +1,7 @@
-name: "my-website"
+name: "RAC Hoop Glossary"
 navbar:
-  title: "My Website"
+  title: "RAC Hoop Glossary"
   left:
-    - text: "Home"
+    - text: "RAC Hoop Glossary"
       href: index.html
-    - text: "About"
-      href: about.html
+    
