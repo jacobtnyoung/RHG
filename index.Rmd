@@ -16,7 +16,7 @@ Terms are grouped by category and listed alphabetically in those categories. Ter
 
 ****
 
-##### Terms/Phrases Pertaining to Wins/Loses  
+##### <ins> Terms/Phrases Pertaining to Wins/Loses <ins>  
 
 *Championship*-A game played to 31 to decide which of the opposing teams will have the winning record for the day. A game to 31 is worth 1.5 games.  
 
@@ -41,7 +41,7 @@ True championship-
 
 ****
 
-#### Terms/Phrases Pertaining to "Checks"  
+#### <ins> Terms/Phrases Pertaining to "Checks" <ins>  
 
 Courtesy-  
 
@@ -58,7 +58,8 @@ Welfare-
 
 ****
 
-#### Misc Terms/Phrases
+#### <ins> Misc Terms/Phrases <ins>
+
 *Air decision*-Occurs when a player passes and the decision for the target of the pass is made while in the air. See also the sarcastic usage of "good pass".
 
 *As deep as []'s wife*-Use to indicate a shot taken at considerable distance from the hoop. The specific name mentioned between the brackets is player specific.
@@ -148,7 +149,7 @@ Not enough recent testing to know-
 
 *Rick*-When a player attempts a shot that hits the portion of the backboard that is vertical and perpendicular to the court.
 
-Samsonite-
+*Samsonite*-When a player makes an egregious traveling violation.
 
 *SHORT!*-A shot that only touches the tip of the rim.
 
