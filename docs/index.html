@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>RAC Hoop Glossary</title>
+
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">RAC Hoop Glossary</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">RAC Hoop Glossary</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">RAC Hoop Glossary</h1>
+
+</div>
+
+
+<p><br></p>
+<div id="this-page-describes-terms-frequently-used-during-rac-hoops"
+class="section level4">
+<h4><em>This page describes terms frequently used during RAC
+hoops</em></h4>
+<p>Terms are grouped by category and listed alphabetically in those
+categories. Terms in <em>italics</em> have been identified and defined.
+Terms that are not <em>italicized</em> are part of the lexicon, but
+require definitions.</p>
+<p>To submit a term and definition or a definition for an existing term,
+use <a href="">this link</a>.</p>
+<p><br></p>
+<hr />
+<div id="termsphrases-pertaining-to-winsloses" class="section level5">
+<h5>Terms/Phrases Pertaining to Wins/Loses</h5>
+<p><em>Championship</em>-A game played to 31 to decide which of the
+opposing teams will have the winning record for the day. A game to 31 is
+worth 1.5 games.</p>
+<p><em>Defeated</em>-When a player or players loses every game they play
+on a specific day of hoop.</p>
+<p><em>Fellowship</em> (other usage is the term <em>Sweep</em>)-When a
+single team wins every game played on a specific day of hoop. Strictly
+requires winning of all games played that day and by original team
+members.</p>
+<p>Pro bowl-</p>
+<p>Super true championship-</p>
+<p>True championship-</p>
+<p><em>True fellowship</em>-When the first game winning 4 players sweep
+the day including the championship with no subs.</p>
+<p><em>Undefeated</em>-When a player wins every game they play on a
+specific day of hoop. Note, a player can go “undefeated” and you earn
+“Fellowship” if they do not participate in the first game played on a
+given day.</p>
+<p>To submit a term and definition or a definition for an existing term,
+use <a href="">this link</a>.</p>
+<p><br></p>
+<hr />
+</div>
+</div>
+<div id="termsphrases-pertaining-to-checks" class="section level4">
+<h4>Terms/Phrases Pertaining to “Checks”</h4>
+<p>Courtesy-</p>
+<p><em>Illegitimate</em>-A game stoppage used by the defense. The check
+is so called “illegitimate” when it is used purely to slow down the
+offense and set your defense.</p>
+<p><em>Score</em>-A game stoppage used to take stock of the score.</p>
+<p>Welfare-</p>
+<p>To submit a term and definition or a definition for an existing term,
+use <a href="">this link</a>.</p>
+<p><br></p>
+<hr />
+</div>
+<div id="misc-termsphrases" class="section level4">
+<h4>Misc Terms/Phrases</h4>
+<p><em>Air decision</em>-Occurs when a player passes and the decision
+for the target of the pass is made while in the air. See also the
+sarcastic usage of “good pass”.</p>
+<p><em>As deep as []’s wife</em>-Use to indicate a shot taken at
+considerable distance from the hoop. The specific name mentioned between
+the brackets is player specific.</p>
+<p>Ave (also Ave-ing in)-</p>
+<p><em>Bank</em>-A generic term to indicate the use of the backboard to
+complete a shot. See Protractor for disambiguation.</p>
+<p><em>Beeped</em>-When a player, during a shot attempt, experiences a
+verbalized “beep” from another player. Some players, under particular
+circumstances, will execute a “self-beep”.</p>
+<p><em>Block party</em>-The occurrence of multiple blocks by one or
+multiple defenders on one or multiple opponents.</p>
+<p>Brandonoma-</p>
+<p><em>Can’t teach strong/big</em>-When an offensive player, despite the
+presence of good defense, prevails in a layup or closely contested shot
+near the rim and the reason for their making the strong is attributed to
+their strength or size. A close variation is: can’t teach fast, as well
+as other derivative usages: can’t teach ______ .</p>
+<p>Carnie shot-</p>
+<p><em>Clearly egregious</em>-Used to indicate a traveling violation
+that deserves added commentary given the egregiousness of the
+violation.</p>
+<p><em>Creeper</em>-A shot that does not directly go in immediately, but
+instead, creates a moment of uncertainty, yet eventually goes through
+the hoop.</p>
+<p>Curable, but serious at its peak-</p>
+<p>Curable, we think-</p>
+<p><em>Dick is in</em>-Indication by another hooper that Dick will be
+playing. Other usages vary widely but include (though not an exhaustive
+list): I got Dick, Who has Dick?, Hey [insert player name], you take
+Dick, etc.</p>
+<p><em>Disqualified</em>-The person shooting in for the next game misses
+everything.</p>
+<p><em>Double-tap</em>-When a player knocks the ball out of bounds and
+immediately before it goes out a player on the opposing team touches the
+ball.</p>
+<p><em>DQ, Dairy Queen Blizzard</em>-When one is shooting in between
+games and misses everything including the rim, net, backboard, and the
+chance of playing again.</p>
+<p><em>Excuse me, sir and/or ummm, sir</em>-Used when a player on the
+same team takes, at a minimum, 2 consecutive ill-advised shots on 2
+consecutive possessions, resulting in zero points (and likely fast break
+points for the other team due to the long rebound).</p>
+<p><em>Full FDR</em>-When a player requires a knee brace for each
+knee.</p>
+<p><em>Half FDR</em>-When a player requires a single knee brace.</p>
+<p><em>Good pass</em>-A term, used sarcastically, to mock the judgement
+of a particular player after a poor pass.</p>
+<p>Ill-advised-</p>
+<p><em>In w #s</em>-A common, yet unnecessary, acknowledgment from one
+submitting their name to hoop as no one would be able to play without
+said #s.</p>
+<p>Index game-</p>
+<p><em>Is it?</em>-An opposing player questioning the execution of a
+shot or pass, only to be dismayed.</p>
+<p><em>Jump?</em>-1) when the ball is tied up between two players
+(preferably on opposite teams), 2) when a play occurs and the outcome is
+not immediately apparent and the ball is awarded to the team with the
+possession arrow, 3) when a straightforward call is questioned in the
+name of psych-ops.</p>
+<p><em>Just the tip</em>-A contested pass that only touches the tip of
+the defenders finger.</p>
+<p><em>Justice</em>-When a debated call results in a change of
+possession and in the subsequent position play ensues that nullifies the
+prior debated call.</p>
+<p><em>Layups?</em>-After several attempts to shoot-in for a game do not
+yield a clear outcome, this term is used jokingly so as to suggest
+speeding up the decision.</p>
+<p>Look out, Gerald-</p>
+<p>Mayvian flu-</p>
+<p>MeAndy-</p>
+<p><em>Move it back</em>-After several attempts to shoot-in for a game
+do not yield a clear outcome, the players move the shoot-in shot from
+the 3-point line to the free-throw line of the opposing side. Can also
+be used to trick unsuspecting players by particular individuals.</p>
+<p><em>Newly found illness</em>-</p>
+<p><em>Niner-Niner</em>-Used to indicate a score of 9-9 or 19-19. See
+Sixty-Nine for more particular usage.</p>
+<p><em>Noon start</em>-An archaic term used in a bygone era to
+coordinate a 12:00 pm start.</p>
+<p>Not enough recent testing to know-</p>
+<p><em>No 3’s</em>-An encouragement to the other team to shoot a 3 when
+they need 2 to win, or, alternatively, an admonishment to the defensive
+team from another defensive team member that seems to almost never
+work.</p>
+<p><em>Number 9</em>-Either the last person in the door who misses
+playing in the first game or, alternatively, anyone who walks in the
+door whom other players want to make feel bad whether they’re actually
+the ninth player.</p>
+<p><em>Out-the-door shot</em>-When a player tries to get in some extra
+bicep curls before the game is officially over.</p>
+<p><em>Protractor</em>-A term used to signal the use of an precisely
+calculated angle when attempting a shot. Note the difference from bank
+which is a generic term to indicate the use of the backboard. Protractor
+is more specifically used to indicate the angle of the shooter’s
+position.</p>
+<p><em>Psych-ops</em>-A call or move with no rational purpose other than
+to get one’s opponent to question the call.</p>
+<p><em>Rule TA.1</em>-A rule governing assignment of incoming players to
+a team that lost players or a new team. A shape-shifting concept
+incapable of being documented that depends entirely on the vigor of the
+advocate and his need for a roster upgrade.</p>
+<p><em>Rick</em>-When a player attempts a shot that hits the portion of
+the backboard that is vertical and perpendicular to the court.</p>
+<p>Samsonite-</p>
+<p><em>SHORT!</em>-A shot that only touches the tip of the rim.</p>
+<p><em>Sixty-nine</em>-Remarked when the score is 6-9, 16-9, 6-19, or
+16-19. Also, frequently mentioned subsequent to: Okay, it is 3-6, let’s
+get a 3 here. Further, a 3 pointer made after announcing Sixty-nine is
+followed by the term Niner-Niner if the team that was down evens the
+score.</p>
+<p><em>“Sparingly”</em>-Apparently means at least once or twice a game
+in every game.</p>
+<p>Sticky D-</p>
+<p><em>Sub?/You ok?</em>-A question put forth to inquire as to whether a
+player needs to be replaced. Used seriously and rhetorically in various
+instances.</p>
+<p><em>Taps</em>-Played to indicate that the outcome of a game is
+seemingly inevitable given the disparity in the score.</p>
+<p><em>Tomahawk</em>-When a defensive player attempts to block a shot
+and egregiously chops at the offensive player.</p>
+<p><em>Turnover</em>-Legal fiction.</p>
+<p><em>Who’s got (insert players name)?</em>-Used to reference poor D on
+an opposing player who continues to score…over…and over…and over.</p>
+<p>To submit a term and definition or a definition for an existing term,
+use <a href="">this link</a>.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
