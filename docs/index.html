@@ -13,7 +13,7 @@
 
 <title>RAC Hoop Glossary</title>
 
-<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -178,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,9 +187,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -325,6 +332,7 @@ link</a></strong></p>
 <p><em>Air decision</em>-Occurs when a player passes and the decision
 for the target of the pass is made while in the air. See also the
 sarcastic usage of “good pass”.</p>
+<p><em>Amphibious</em>-the ability to shoot poorly with both hands.</p>
 <p><em>As deep as []’s wife</em>-Use to indicate a shot taken at
 considerable distance from the hoop. The specific name mentioned between
 the brackets is player specific.</p>
@@ -351,10 +359,12 @@ instead, creates a moment of uncertainty, yet eventually goes through
 the hoop.</p>
 <p>Curable, but serious at its peak-</p>
 <p>Curable, we think-</p>
+<p>D&amp;C/Duck and Chuck-</p>
 <p><em>Dick is in</em>-Indication by another hooper that Dick will be
 playing. Other usages vary widely but include (though not an exhaustive
 list): I got Dick, Who has Dick?, Hey [insert player name], you take
 Dick, etc.</p>
+<p>Disappointment Checkdown-</p>
 <p><em>Disqualified</em>-The person shooting in for the next game misses
 everything.</p>
 <p><em>Double-tap</em>-When a player knocks the ball out of bounds and
@@ -370,8 +380,12 @@ points for the other team due to the long rebound).</p>
 <p><em>Full FDR</em>-When a player requires a knee brace for each
 knee.</p>
 <p><em>Half FDR</em>-When a player requires a single knee brace.</p>
-<p><em>Good pass</em>-A term, used sarcastically, to mock the judgement
-of a particular player after a poor pass.</p>
+<p><em>Good pass</em>-Said by a player who makes a marginal pass that
+ended up being converted into points by an amazing shot, whereupon the
+passer—in the jubilation—anonymously drops “good pass” into the
+congratulatory milieu hoping no one realizes it was the passer. Of
+course, now it is used by devotees to blatantly redirect the spotlight
+onto themselves after a modest or mediocre pass.</p>
 <p>Ill-advised-</p>
 <p><em>In w #s</em>-A common, yet unnecessary, acknowledgment from one
 submitting their name to hoop as no one would be able to play without
@@ -444,11 +458,15 @@ player needs to be replaced. Used seriously and rhetorically in various
 instances.</p>
 <p><em>Taps</em>-Played to indicate that the outcome of a game is
 seemingly inevitable given the disparity in the score.</p>
+<p><em>The crowd boos the two pointer</em>-when making a three would’ve
+brought the score to 6-9.</p>
 <p><em>Tomahawk</em>-When a defensive player attempts to block a shot
 and egregiously chops at the offensive player.</p>
 <p><em>Turnover</em>-Legal fiction.</p>
+<p>We the people-</p>
 <p><em>Who’s got (insert players name)?</em>-Used to reference poor D on
 an opposing player who continues to score…over…and over…and over.</p>
+<p>WOOOO!, Woooooo, woo, oooh, uhh-</p>
 <p>To submit a term and definition or a definition for an existing term,
 use <a href="">this link</a>.</p>
 </div>
