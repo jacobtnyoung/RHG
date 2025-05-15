@@ -24,8 +24,6 @@ Terms are grouped by category and listed alphabetically in those categories. Ter
 
 *Fellowship* (other usage is the term *Sweep*)-When a single team wins every game played on a specific day of hoop. Strictly requires winning of all games played that day and by original team members.  
 
-Pro bowl-  
-
 *Undefeated*-When a player wins every game they play on a specific day of hoop. Note, a player can go "undefeated" and you earn "Fellowship" if they do not participate in the first game played on a given day.  
 
 
@@ -127,6 +125,8 @@ Pro bowl-
 *Rick*-When a player attempts a shot that hits the portion of the backboard that is vertical and perpendicular to the court.
 
 *Samsonite*-When a player makes an egregious traveling violation.
+
+*Shampionship*-The final game of the day where a winless team beats the undefeated team. Note: The Shampionship team typically makes a comment that only the final game of the day matters. The losing team typically makes a comment they were tired from playing so many games.
 
 *SHORT!*-A shot that only touches the tip of the rim.
 
