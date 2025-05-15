@@ -13,7 +13,7 @@
 
 <title>RAC Hoop Glossary</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -178,8 +178,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -187,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -295,11 +288,6 @@ on a specific day of hoop.</p>
 single team wins every game played on a specific day of hoop. Strictly
 requires winning of all games played that day and by original team
 members.</p>
-<p>Pro bowl-</p>
-<p>Super true championship-</p>
-<p>True championship-</p>
-<p><em>True fellowship</em>-When the first game winning 4 players sweep
-the day including the championship with no subs.</p>
 <p><em>Undefeated</em>-When a player wins every game they play on a
 specific day of hoop. Note, a player can go “undefeated” and you earn
 “Fellowship” if they do not participate in the first game played on a
@@ -314,12 +302,10 @@ link</a></strong></p>
 </div>
 <div id="termsphrases-pertaining-to-checks" class="section level4">
 <h4><ins> Terms/Phrases Pertaining to “Checks” <ins></h4>
-<p>Courtesy-</p>
 <p><em>Illegitimate</em>-A game stoppage used by the defense. The check
 is so called “illegitimate” when it is used purely to slow down the
 offense and set your defense.</p>
 <p><em>Score</em>-A game stoppage used to take stock of the score.</p>
-<p>Welfare-</p>
 <p><strong>To submit a term and definition or a definition for an
 existing term, use <a
 href="https://github.com/jacobtnyoung/RHG/issues">this
@@ -336,7 +322,6 @@ sarcastic usage of “good pass”.</p>
 <p><em>As deep as []’s wife</em>-Use to indicate a shot taken at
 considerable distance from the hoop. The specific name mentioned between
 the brackets is player specific.</p>
-<p>Ave (also Ave-ing in)-</p>
 <p><em>Bank</em>-A generic term to indicate the use of the backboard to
 complete a shot. See Protractor for disambiguation.</p>
 <p><em>Beeped</em>-When a player, during a shot attempt, experiences a
@@ -344,27 +329,28 @@ verbalized “beep” from another player. Some players, under particular
 circumstances, will execute a “self-beep”.</p>
 <p><em>Block party</em>-The occurrence of multiple blocks by one or
 multiple defenders on one or multiple opponents.</p>
-<p>Brandonoma-</p>
 <p><em>Can’t teach strong/big</em>-When an offensive player, despite the
 presence of good defense, prevails in a layup or closely contested shot
 near the rim and the reason for their making the strong is attributed to
 their strength or size. A close variation is: can’t teach fast, as well
 as other derivative usages: can’t teach ______ .</p>
-<p>Carnie shot-</p>
 <p><em>Clearly egregious</em>-Used to indicate a traveling violation
 that deserves added commentary given the egregiousness of the
 violation.</p>
 <p><em>Creeper</em>-A shot that does not directly go in immediately, but
 instead, creates a moment of uncertainty, yet eventually goes through
 the hoop.</p>
-<p>Curable, but serious at its peak-</p>
-<p>Curable, we think-</p>
-<p>D&amp;C/Duck and Chuck-</p>
+<p><em>D&amp;C/Duck and Chuck</em>-Keith’s endearing phrase for
+Brandon’s three-point shoot.</p>
 <p><em>Dick is in</em>-Indication by another hooper that Dick will be
 playing. Other usages vary widely but include (though not an exhaustive
 list): I got Dick, Who has Dick?, Hey [insert player name], you take
 Dick, etc.</p>
-<p>Disappointment Checkdown-</p>
+<p><em>Disappointment Checkdown</em>-the progressive decline of the
+tone, volume, and enthusiasm of your hooting (to get the ball) as you
+realize the teammate is continuing with the move you perceive to be of
+lesser value than passing to you, which is seen as the best-possible, if
+not perfect, play.</p>
 <p><em>Disqualified</em>-The person shooting in for the next game misses
 everything.</p>
 <p><em>Double-tap</em>-When a player knocks the ball out of bounds and
@@ -386,11 +372,14 @@ passer—in the jubilation—anonymously drops “good pass” into the
 congratulatory milieu hoping no one realizes it was the passer. Of
 course, now it is used by devotees to blatantly redirect the spotlight
 onto themselves after a modest or mediocre pass.</p>
-<p>Ill-advised-</p>
+<p><em>Ill-advised</em>-Said after a shot is taken with questionable
+decision making.</p>
 <p><em>In w #s</em>-A common, yet unnecessary, acknowledgment from one
 submitting their name to hoop as no one would be able to play without
 said #s.</p>
-<p>Index game-</p>
+<p><em>Index game</em>-a game where Gerald and Keith were on opposite
+sides, and a win counted toward a monthly total of who was the superior
+player.</p>
 <p><em>Is it?</em>-An opposing player questioning the execution of a
 shot or pass, only to be dismayed.</p>
 <p><em>Jump?</em>-1) when the ball is tied up between two players
@@ -406,19 +395,16 @@ prior debated call.</p>
 <p><em>Layups?</em>-After several attempts to shoot-in for a game do not
 yield a clear outcome, this term is used jokingly so as to suggest
 speeding up the decision.</p>
-<p>Look out, Gerald-</p>
-<p>Mayvian flu-</p>
-<p>MeAndy-</p>
+<p><em>Gerald</em>-Calling out any player who is shooting around and
+interferes with a game in progress.</p>
 <p><em>Move it back</em>-After several attempts to shoot-in for a game
 do not yield a clear outcome, the players move the shoot-in shot from
 the 3-point line to the free-throw line of the opposing side. Can also
 be used to trick unsuspecting players by particular individuals.</p>
-<p><em>Newly found illness</em>-</p>
 <p><em>Niner-Niner</em>-Used to indicate a score of 9-9 or 19-19. See
 Sixty-Nine for more particular usage.</p>
 <p><em>Noon start</em>-An archaic term used in a bygone era to
 coordinate a 12:00 pm start.</p>
-<p>Not enough recent testing to know-</p>
 <p><em>No 3’s</em>-An encouragement to the other team to shoot a 3 when
 they need 2 to win, or, alternatively, an admonishment to the defensive
 team from another defensive team member that seems to almost never
@@ -444,6 +430,11 @@ advocate and his need for a roster upgrade.</p>
 the backboard that is vertical and perpendicular to the court.</p>
 <p><em>Samsonite</em>-When a player makes an egregious traveling
 violation.</p>
+<p><em>Shampionship</em>-The final game of the day where a winless team
+beats the undefeated team. Note: The Shampionship team typically makes a
+comment that only the final game of the day matters. The losing team
+typically makes a comment they were tired from playing so many
+games.</p>
 <p><em>SHORT!</em>-A shot that only touches the tip of the rim.</p>
 <p><em>Sixty-nine</em>-Remarked when the score is 6-9, 16-9, 6-19, or
 16-19. Also, frequently mentioned subsequent to: Okay, it is 3-6, let’s
@@ -452,7 +443,6 @@ followed by the term Niner-Niner if the team that was down evens the
 score.</p>
 <p><em>“Sparingly”</em>-Apparently means at least once or twice a game
 in every game.</p>
-<p>Sticky D-</p>
 <p><em>Sub?/You ok?</em>-A question put forth to inquire as to whether a
 player needs to be replaced. Used seriously and rhetorically in various
 instances.</p>
@@ -460,15 +450,22 @@ instances.</p>
 seemingly inevitable given the disparity in the score.</p>
 <p><em>The crowd boos the two pointer</em>-when making a three would’ve
 brought the score to 6-9.</p>
+<p><em>Timeout Mercury</em>-Statement made after a team goes on an
+early, extensive scoring run.</p>
 <p><em>Tomahawk</em>-When a defensive player attempts to block a shot
 and egregiously chops at the offensive player.</p>
 <p><em>Turnover</em>-Legal fiction.</p>
-<p>We the people-</p>
+<p><em>We know</em>-The obligatory response when Brandon has made three
+or more “my bad” comments in a row after failures of various sorts on
+consecutive touches.</p>
 <p><em>Who’s got (insert players name)?</em>-Used to reference poor D on
 an opposing player who continues to score…over…and over…and over.</p>
-<p>WOOOO!, Woooooo, woo, oooh, uhh-</p>
-<p>To submit a term and definition or a definition for an existing term,
-use <a href="">this link</a>.</p>
+<p><em>Who’s next!</em>-A loud statement made at the end of a game by a
+winning player. No response is expected.</p>
+<p><strong>To submit a term and definition or a definition for an
+existing term, use <a
+href="https://github.com/jacobtnyoung/RHG/issues">this
+link</a></strong></p>
 </div>
 
 
