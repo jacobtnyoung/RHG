@@ -22,9 +22,9 @@ Terms are grouped by category and listed alphabetically in those categories. Ter
 
 *Defeated*-When a player or players loses every game they play on a specific day of hoop.  
 
-*Fellowship* (other usage is the term *Sweep*)-When a single team wins every game played on a specific day of hoop. Strictly requires winning of all games played that day and by original team members.  
+*Fellowship*-When a single team wins every game played on a specific day of hoop. Strictly requires winning of all games played that day and by original team members.  
 
-*Undefeated*-When a player wins every game they play on a specific day of hoop. Note, a player can go "undefeated" and you earn "Fellowship" if they do not participate in the first game played on a given day.  
+*Undefeated*-When a player wins every game they play on a specific day of hoop. Note, a player can go "undefeated" but <u>cannot</u> earn "Fellowship" if they did not participate in the first game played on a given day.  
 
 
 **To submit a term and definition or a definition for an existing term, use [this link](https://github.com/jacobtnyoung/RHG/issues)**
